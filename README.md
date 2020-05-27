@@ -8,8 +8,7 @@ composer require crawly/renavam-laravel
 
 ## Exemplo de uso
 ```
-
-    $request->validate([
-        'renavam' => 'required|renavam',
-    ]);
+$request->validate([
+    'renavam' => 'required|renavam',
+]);
 ```
