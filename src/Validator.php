@@ -4,14 +4,13 @@
 namespace Crawly\RenavamLaravel;
 
 use Crawly\RenavamLaravel\Rules\Renavam;
-use Illuminate\Validation\Validator as BaseValidator;
 
-class Validator extends BaseValidator
+class Validator
 {
     /**
      * @SuppressWarnings("PHPMD.UnusedFormalParameter")
      */
-    public function validateRenavam($attribute, $value): bool
+    public function validateRenavam($attribute, $value, $parameters, $validator): bool
     {
         $renavam = new Renavam();
 

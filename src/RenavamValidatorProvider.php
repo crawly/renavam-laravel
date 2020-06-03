@@ -20,19 +20,6 @@ class RenavamValidatorProvider extends ServiceProvider
      */
     public function boot()
     {
-        $me = $this;
-
-        $this->app['validator']->resolver(function ($translator, $data, $rules, $messages, $attributes) use ($me) {
-            $messages += $me->getMessages();
-
-            return new Validator($translator, $data, $rules, $messages, $attributes);
-        });
-    }
-
-    protected function getMessages()
-    {
-        return [
-            'renavam' => 'O campo :attribute deve ser um renavam válido.',
-        ];
+        $this->app['validator']->extend('renavam', '\\Crawly\\RenavamLaravel\\Validator@validateRenavam', 'O campo :attribute deve ser um renavam válido.');
     }
 }
