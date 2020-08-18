@@ -12,7 +12,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Crawly\\RenavamValidatorProvider"
+        "Crawly\\RenavamLaravel\\RenavamValidatorProvider"
       ]
     }
   },
