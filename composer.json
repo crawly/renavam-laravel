@@ -12,7 +12,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Crawly\\RenavamValidatorProvider"
+        "Crawly\\RenavamLaravel\\RenavamValidatorProvider"
       ]
     }
   },
@@ -34,8 +34,8 @@
     "phpmd/phpmd": "2.8.*",
     "phpstan/phpstan": "0.12.*",
     "sebastian/phpcpd": "4.1.*",
-    "friendsofphp/php-cs-fixer": "2.16.*",
-    "orchestra/testbench": "6.*"
+    "friendsofphp/php-cs-fixer": "2.17.*",
+    "orchestra/testbench": "4.*"
   },
   "scripts": {
     "phpcs": "php-cs-fixer fix src/",
